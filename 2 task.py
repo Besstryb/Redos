@@ -32,12 +32,12 @@ var_float = int(var_float)
 var_float = str(var_float)
 var_str = float(var_str)
 
-#Печать размера и элементы для переменных str, list, tuple
+#Печать размера и элементов для переменных str, list, tuple
 if isinstance(var_str, (str, list, tuple)):
     print(f"Первый элемент: {var_str[0]}")
     print(f"Последний элемент: {var_str[-1]}")
     print(f"Элементы без первого и последнего: {var_str[1:-1]}")
 
-#печать размера и знеачения для переменной dict
+#печать размера и значения для переменной dict
     if isinstance(var_dict, dict):
         print(f"Значение одного из ключей: {var_dict['name']}")
