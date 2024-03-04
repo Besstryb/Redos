@@ -24,14 +24,6 @@ print_variable_info(var_tuple)
 print_variable_info(var_dict)
 print_variable_info(var_set)
 
-#Изменение типа переменной int на float и обратно
-var_int = float(var_int)
-var_float = int(var_float)
-
-#Изменение типа переменной float на str и обратно
-var_float = str(var_float)
-var_str = float(var_str)
-
 #Печать размера и элементов для переменных str, list, tuple
 if isinstance(var_str, (str, list, tuple)):
     print(f"Первый элемент: {var_str[0]}")
@@ -39,5 +31,18 @@ if isinstance(var_str, (str, list, tuple)):
     print(f"Элементы без первого и последнего: {var_str[1:-1]}")
 
 #печать размера и значения для переменной dict
-    if isinstance(var_dict, dict):
-        print(f"Значение одного из ключей: {var_dict['name']}")
+if isinstance(var_dict, dict):
+    print(f"Значение одного из ключей: {var_dict['name']}")
+
+#Изменение типа переменной int на float и обратно
+var_int = float(var_int)
+var_float = int(var_float)
+print (type(var_float))
+print (type(var_int))
+
+#Изменение типа переменной float на str и обратно
+var_float = str(var_float)
+var_str = float(var_str)
+print (type(var_str))
+print(type(var_float))
+
